@@ -1,12 +1,17 @@
 # Tiny PowerShell Projects
 
-This is the code repository _Tiny PowerShell Projects_.
+This is the code repository for _Tiny PowerShell Projects_.
 
 I ported it from the Manning Publications book, _Tiny Python Projects_, by Ken Youens-Clark:
 
 The Python repo is here: https://github.com/kyclark/tiny_python_projects
 The Python book is here: https://www.manning.com/books/tiny-python-projects?a_aid=youens&a_bid=b6485d52
 
+One of the many cool aspects of this not only the approach to learning `PowerShell` this way, additionally, you can head over to the `Python` repo and see how it is done in that language. Could be you are here because you're a Pythonista, and want to see how PoShers do it.
+
+Either way, it's the same puzzles implemented in both languages, and you can use the tests provided, to do Test Driven Development and prove these and your solutions work, as you make changes.
+
+## The approach
 
 There is a directory for each chapter of the book.
 There is a README to describe each exercise.
