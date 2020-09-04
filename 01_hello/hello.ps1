@@ -2,4 +2,4 @@ param(
     $name = "World"
 )
 
-"Hello, " + $name + '!'
+'Hello, ' + $name + '!'
