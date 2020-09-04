@@ -1,6 +1,6 @@
 # Tiny PowerShell Projects
 
-This is the code repository for _Tiny PowerShell Projects_.
+This is the code repository for _Tiny **PowerShell** Projects_.
 
 I ported it from the Manning Publications book, _Tiny Python Projects_, by Ken Youens-Clark:
 
