@@ -1,1 +1,1 @@
-# Tiny-PowerShell-Projects
+# Tiny PowerShell Projects
