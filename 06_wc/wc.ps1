@@ -4,7 +4,7 @@ param(
 )
 
 Begin {
-
+    $list = @()
 }
 
 Process {
