@@ -37,6 +37,7 @@ Practice is key.
 
 You should run the test suite after every change to your program to ensure you are making progress!
 
+## Chapters
 
 * [Chapter 1: How to write and test a PowerShell program]() How to create a PowerShell program that prints a string and takes a parameter.
 
