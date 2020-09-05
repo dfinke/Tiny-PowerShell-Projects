@@ -15,9 +15,48 @@ LinkedIn:          https://www.linkedin.com/in/douglasfinke/
 
 param(
     $file,
-    $inputs
+    [System.Collections.ArrayList]$inputs
 )
 
-$adjective, $noun, $preposition = $inputs
+function Find-Brackets {
+    param(
+        $text
+    )
 
-(Get-Content -Raw $file) -Replace '<adjective>', $adjective -Replace '<noun>', $noun -Replace '<preposition>', $preposition
+    $start = $text.IndexOf('<')
+    $stop = $text.IndexOf('>')    
+
+    if ($start -ge 0 -and $stop -ge 0) {
+        return $start, $stop
+    }
+}
+
+$text = Get-Content -Raw $file
+$hadPlaceholders = $false
+
+while ($true) {
+    $brackets = Find-Brackets $text
+
+    if (!$brackets) {
+        break 
+    }
+
+    $start, $stop = $brackets
+
+    $placeholder = -join $text[$start..($stop - 1)]
+    $pos = $placeholder.Substring(1, ($placeholder.Length - 1))
+
+    $answer = $inputs[0]
+    $inputs.RemoveAt(0)
+    
+    $text = (-join $text[0..($start - 1)]) + $answer + (-join $text[($stop + 1)..$text.Length])
+
+    $hadPlaceholders = $true
+}
+
+if ($hadPlaceholders) { 
+    $text
+}
+else {
+    "$($file) has no placeholders."
+}
