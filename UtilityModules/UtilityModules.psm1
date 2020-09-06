@@ -83,3 +83,52 @@ function Get-AsciiPunctuation {
 function Get-Digits {
     '0123456789'
 }
+
+function Invoke-MakeTranslation {
+    <#
+        .Synopsis
+         Returns a translation table that maps each character in the intabstring into the character at the same position in the outtabstring
+    #>
+    param(
+        [string]$inTabString,
+        [string]$outTabString
+    )
+
+    if ($inTabString.Length -ne $outTabString.Length) {
+        throw "both need to be the same length"        
+    }
+
+    $count = $inTabString.Length
+    $h = @{}
+
+    for ($i = 0; $i -lt $count; $i++) {
+        $key = $inTabString[$i]
+        $h.$key = $outTabString[$i]
+    }
+
+    $h
+}
+
+function Invoke-Translate {
+    <#
+        .Synopsis
+        Returns a string that is modified string of givens string according to given translation mappings
+    #>
+    param(
+        $text,
+        [hashtable]$translateMap
+    )
+
+    -join $(
+        for ($i = 0; $i -lt $text.Length; $i++) {
+            $currentChar = $text[$i]
+            $newChar = $translateMap.$currentChar
+            if ($newChar) {
+                $newChar
+            }
+            else {
+                $currentChar
+            }
+        }
+    )
+}
