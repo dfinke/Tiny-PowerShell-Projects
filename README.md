@@ -41,17 +41,17 @@ You should run the test suite after every change to your program to ensure you a
 
 * [Chapter 1: How to write and test a PowerShell program]() How to create a PowerShell program that prints a string and takes a parameter.
 
-* [Chapter 2: Crow's Nest](): How to write a PowerShell program that accepts a single, positional argument and creates a newly formatted output string.
+* [Chapter 2: Crow's Nest]() How to write a PowerShell program that accepts a single, positional argument and creates a newly formatted output string.
 
 * [Chapter 3: Picnic]() Writing a PowerShell program that accepts multiple string arguments and formats the results depending on the number of items.
 
-* [Chapter 4: Jump The Five]()p): Writing a PowerShell program to encode the numerals in a given text using an algorithm called "Jump The Five." Use of a dictionary as a lookup table, characters not in the dictionary remain unchanged. Introduction to encoding/decoding text, basic idea of encryption.
+* [Chapter 4: Jump The Five]() Writing a PowerShell program to encode the numerals in a given text using an algorithm called "Jump The Five." Use of a dictionary as a lookup table, characters not in the dictionary remain unchanged. Introduction to encoding/decoding text, basic idea of encryption.
 
 * [Chapter 5: Howler]() Writing a PowerShell program that can process input text either from the command line or from a file.The output prints either to STDOUT or to a file.  Learning about how to read/write the contents of a file.
 
 * [Chapter 6: Word Count]() Writing a PowerShell program to emulate a word count program. Validates and processes multiple file inputs as well as STDIN and creates output of the counts of lines, words, and characters for each file.
 
-* [Chapter 7: Gashlycrumb](): Writing a PowerShell program that processes an input file to build a lookup table (dictionary) that is used with multiple positional arguments to translate to the values from the file.
+* [Chapter 7: Gashlycrumb]() Writing a PowerShell program that processes an input file to build a lookup table (dictionary) that is used with multiple positional arguments to translate to the values from the file.
 
 * [Chapter 8: Apples and Bananas]() Writing a PowerShell program to find and replace elements in a string.
 
@@ -65,7 +65,7 @@ You should run the test suite after every change to your program to ensure you a
 
 * [Chapter 13: Twelve Days of Christmas]() Writing a PowerShell program to create the verses for "The Twelve Days of Christmas" from a given day. Learning how to write a function and the test for it, then using the function in a list to generate the output.
 
-* [Chapter 14: The Rhymer](): Writing a PowerShell program that can split off any initial consonants from a word and append a list of prefixes to create new rhyming "words." Exploration of regular expressions to handle words with no initial consonants, with one or more leading consonants, and nothing but consonants.
+* [Chapter 14: The Rhymer]() Writing a PowerShell program that can split off any initial consonants from a word and append a list of prefixes to create new rhyming "words." Exploration of regular expressions to handle words with no initial consonants, with one or more leading consonants, and nothing but consonants.
 
 * [Chapter 15: The Kentucky Friar]() In this chapter we delve further into regular expressions, first learning how to split a string using a regex so we can separate things that look like "words" from non-words like punctuation and whitespace. Then we try to identify the word "you" (case-insensitive) to turn into "y'all" and any 2-syllable words ending in "-ing" so we can replace the final "g" with an apostrophe so that "cooking" becomes "cookin'" but "swing" would remain "swing." We then apply this to an entire body of text to Kentucky fry the words with amusing results.
 
