@@ -50,6 +50,7 @@ $words = New-Object System.Collections.Generic.HashSet[string]
 $TextInfo = (Get-Culture).TextInfo
 
 foreach ($targetFile in $file) {
+    $targetFile = Resolve-Path $targetFile
     foreach ($line in [System.IO.File]::ReadAllLines($targetFile)) {        
         foreach ($word in ($line.ToLower().Split() -replace '[^a-zA-Z]', '' ).Where( { $_.Length -ge $minWordLength -and $_.Length -le $maxWordLength })) {
             $null = $words.Add($TextInfo.ToTitleCase($word))
