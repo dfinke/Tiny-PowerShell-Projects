@@ -1,3 +1,5 @@
+# Try It
+
 Try the puzzles online in a Jupyter Notebook. No installs needed.
 
 Click here:
