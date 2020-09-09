@@ -1,3 +1,5 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dfinke/Tiny-PowerShell-Projects/master)
+
 # Tiny PowerShell Projects
 
 This is the code repository for _Tiny **PowerShell** Projects_.
