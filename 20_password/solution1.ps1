@@ -14,7 +14,7 @@ LinkedIn:          https://www.linkedin.com/in/douglasfinke/
 #>
 
 param(
-    $file,
+    $file='../inputFiles/words.txt',
     $num = 3,
     $numWords = 4,
     $minWordLength = 3,
