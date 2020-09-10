@@ -25,8 +25,13 @@ function Invoke-Fry {
     }
 
     if ($word.EndsWith('ing')) {
-        $word.Substring(0, ($word.Length - 1)) + "'"
-    }
+        if ($word.Substring(0, ($word.Length - 3)).IndexOfAny('AaEeIiOoUuYy'.ToCharArray()) -gt -1) {
+            $word.Substring(0, ($word.Length - 1)) + "'"
+        }
+        else {
+            $word
+        }
+    }    
 }
 
 if (Test-Path $text -ErrorAction SilentlyContinue) {
