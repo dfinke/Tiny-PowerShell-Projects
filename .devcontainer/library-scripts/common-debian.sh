@@ -55,19 +55,26 @@ if [ "${PACKAGES_ALREADY_INSTALLED}" != "true" ]; then
     PACKAGE_LIST="apt-utils \
         git \
         openssh-client \
-        less \
+        gnupg2 \
         iproute2 \
         procps \
+        lsof \
+        htop \
+        net-tools \
+        psmisc \
         curl \
         wget \
+        rsync \
+        ca-certificates \
         unzip \
+        zip \
         nano \
+        vim-tiny \
+        less \
         jq \
         lsb-release \
-        ca-certificates \
         apt-transport-https \
         dialog \
-        gnupg2 \
         libc6 \
         libgcc1 \
         libgssapi-krb5-2 \
@@ -76,7 +83,9 @@ if [ "${PACKAGES_ALREADY_INSTALLED}" != "true" ]; then
         libstdc++6 \
         zlib1g \
         locales \
-        sudo"
+        sudo \
+        ncdu \
+        man-db" 
 
     # Install libssl1.1 if available
     if [[ ! -z $(apt-cache --names-only search ^libssl1.1$) ]]; then
@@ -133,29 +142,42 @@ else
 fi
 
 # Add add sudo support for non-root user
-if [ "${EXISTING_NON_ROOT_USER}" != "${USERNAME}" ]; then
+if [ "${USERNAME}" != "root" ] && [ "${EXISTING_NON_ROOT_USER}" != "${USERNAME}" ]; then
     echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME
     chmod 0440 /etc/sudoers.d/$USERNAME
     EXISTING_NON_ROOT_USER="${USERNAME}"
 fi
 
+# .bashrc/.zshrc snippet
+RC_SNIPPET="$(cat << EOF
+export USER=\$(whoami)
+
+export PATH=\$PATH:\$HOME/.local/bin
+
+if [[ \$(which code-insiders 2>&1) && ! \$(which code 2>&1) ]]; then 
+    alias code=code-insiders
+fi
+EOF
+)"
+
 # Ensure ~/.local/bin is in the PATH for root and non-root users for bash. (zsh is later)
-if [ "${DOT_LOCAL_ALREADY_ADDED}" != "true" ]; then
-    echo "export PATH=\$PATH:\$HOME/.local/bin" | tee -a /root/.bashrc >> /home/$USERNAME/.bashrc 
-    chown $USER_UID:$USER_GID /home/$USERNAME/.bashrc
-    DOT_LOCAL_ALREADY_ADDED="true"
+if [ "${RC_SNIPPET_ALREADY_ADDED}" != "true" ]; then
+    echo "${RC_SNIPPET}" >> /etc/bash.bashrc
+    RC_SNIPPET_ALREADY_ADDED="true"
 fi
 
 # Optionally install and configure zsh
 if [ "${INSTALL_ZSH}" = "true" ] && [ ! -d "/root/.oh-my-zsh" ] && [ "${ZSH_ALREADY_INSTALLED}" != "true" ]; then
     apt-get-update-if-needed
     apt-get install -y zsh
-    curl -fsSLo- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | bash 2>&1
-    echo "export PATH=\$PATH:\$HOME/.local/bin" >> /root/.zshrc
+    curl -fsSLo- https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh | bash 2>&1
+    echo "${RC_SNIPPET}" >> /etc/zsh/zshrc
+    echo -e "DEFAULT_USER=\$USER\nprompt_context(){}" >> /root/.zshrc
+    cp -fR /root/.oh-my-zsh /etc/skel
+    cp -f /root/.zshrc /etc/skel
+    sed -i -e "s/\/root\/.oh-my-zsh/\/home\/\$(whoami)\/.oh-my-zsh/g" /etc/skel/.zshrc
     if [ "${USERNAME}" != "root" ]; then
-        cp -fR /root/.oh-my-zsh /home/$USERNAME
-        cp -f /root/.zshrc /home/$USERNAME
-        sed -i -e "s/\/root\/.oh-my-zsh/\/home\/$USERNAME\/.oh-my-zsh/g" /home/$USERNAME/.zshrc
+        cp -fR /etc/skel/.oh-my-zsh /etc/skel/.zshrc /home/$USERNAME
         chown -R $USER_UID:$USER_GID /home/$USERNAME/.oh-my-zsh /home/$USERNAME/.zshrc
     fi
     ZSH_ALREADY_INSTALLED="true"
@@ -167,5 +189,7 @@ echo -e "\
     PACKAGES_ALREADY_INSTALLED=${PACKAGES_ALREADY_INSTALLED}\n\
     LOCALE_ALREADY_SET=${LOCALE_ALREADY_SET}\n\
     EXISTING_NON_ROOT_USER=${EXISTING_NON_ROOT_USER}\n\
-    DOT_LOCAL_ALREADY_ADDED=${DOT_LOCAL_ALREADY_ADDED}\n\
+    RC_SNIPPET_ALREADY_ADDED=${RC_SNIPPET_ALREADY_ADDED}\n\
     ZSH_ALREADY_INSTALLED=${ZSH_ALREADY_INSTALLED}" > "${MARKER_FILE}"
+
+echo "Done!"
