@@ -47,37 +47,38 @@ You should run the test suite after every change to your program to ensure you a
 
 ## Chapters
 
-* [Chapter 1: How to write and test a PowerShell program]() How to create a PowerShell program that prints a string and takes a parameter.
+* [Chapter 1: How to write and test a PowerShell program](https://github.com/dfinke/Tiny-PowerShell-Projects/tree/master/01_hello) How to create a PowerShell program that prints a string and takes a parameter.
 
-* [Chapter 2: Crow's Nest]() How to write a PowerShell program that accepts a single, positional argument and creates a newly formatted output string.
+* [Chapter 2: Crow's Nest](https://github.com/dfinke/Tiny-PowerShell-Projects/tree/master/02_crowsnest) How to write a PowerShell program that accepts a single, positional argument and creates a newly formatted output string.
 
-* [Chapter 3: Picnic]() Writing a PowerShell program that accepts multiple string arguments and formats the results depending on the number of items.
+* [Chapter 3: Picnic](https://github.com/dfinke/Tiny-PowerShell-Projects/tree/master/03_picnic) Writing a PowerShell program that accepts multiple string arguments and formats the results depending on the number of items.
 
-* [Chapter 4: Jump The Five]() Writing a PowerShell program to encode the numerals in a given text using an algorithm called "Jump The Five." Use of a dictionary as a lookup table, characters not in the dictionary remain unchanged. Introduction to encoding/decoding text, basic idea of encryption.
+* [Chapter 4: Jump The Five](https://github.com/dfinke/Tiny-PowerShell-Projects/tree/master/04_jump_the_five) Writing a PowerShell program to encode the numerals in a given text using an algorithm called "Jump The Five." Use of a dictionary as a lookup table, characters not in the dictionary remain unchanged. Introduction to encoding/decoding text, basic idea of encryption.
 
-* [Chapter 5: Howler]() Writing a PowerShell program that can process input text either from the command line or from a file.The output prints either to STDOUT or to a file.  Learning about how to read/write the contents of a file.
+* [Chapter 5: Howler](https://github.com/dfinke/Tiny-PowerShell-Projects/tree/master/05_howler) Writing a PowerShell program that can process input text either from the command line or from a file.The output prints either to STDOUT or to a file.  Learning about how to read/write the contents of a file.
 
-* [Chapter 6: Word Count]() Writing a PowerShell program to emulate a word count program. Validates and processes multiple file inputs as well as STDIN and creates output of the counts of lines, words, and characters for each file.
+* [Chapter 6: Word Count](https://github.com/dfinke/Tiny-PowerShell-Projects/tree/master/06_wc) Writing a PowerShell program to emulate a word count program. Validates and processes multiple file inputs as well as STDIN and creates output of the counts of lines, words, and characters for each file.
 
-* [Chapter 7: Gashlycrumb]() Writing a PowerShell program that processes an input file to build a lookup table (dictionary) that is used with multiple positional arguments to translate to the values from the file.
+* [Chapter 7: Gashlycrumb](https://github.com/dfinke/Tiny-PowerShell-Projects/tree/master/07_gashlycrumb) Writing a PowerShell program that processes an input file to build a lookup table (dictionary) that is used with multiple positional arguments to translate to the values from the file.
 
-* [Chapter 8: Apples and Bananas]() Writing a PowerShell program to find and replace elements in a string.
+* [Chapter 8: Apples and Bananas](https://github.com/dfinke/Tiny-PowerShell-Projects/tree/master/08_apples_and_bananas) Writing a PowerShell program to find and replace elements in a string.
 
-* [Chapter 9: Abuse]() Writing a PowerShell program to generate Shakespearean insults by randomly combining some number of adjectives with a randomly chosen noun. Learning about randomness, seeds, and testing.
+* [Chapter 9: Abuse](https://github.com/dfinke/Tiny-PowerShell-Projects/tree/master/09_abuse) Writing a PowerShell program to generate Shakespearean insults by randomly combining some number of adjectives with a randomly chosen noun. Learning about randomness, seeds, and testing.
 
-* [Chapter 10: Telephone]() Using probabilistic and deterministic approaches to randomly mutate a string.
+* [Chapter 10: Telephone](https://github.com/dfinke/Tiny-PowerShell-Projects/tree/master/10_telephone) Using probabilistic and deterministic approaches to randomly mutate a string.
 
-* [Chapter 11: Bottles of Beer]() Writing a PowerShell program to produce the verse to the "99 Bottles of Beer" song from a given starting point. Learning to count down, format strings, algorithm design. A focus on writing a function and unit test, exploring ways to incorporate our function to generate the verses from for loops.
+* [Chapter 11: Bottles of Beer](https://github.com/dfinke/Tiny-PowerShell-Projects/tree/master/11_bottles_of_beer
+) Writing a PowerShell program to produce the verse to the "99 Bottles of Beer" song from a given starting point. Learning to count down, format strings, algorithm design. A focus on writing a function and unit test, exploring ways to incorporate our function to generate the verses from for loops.
 
-* [Chapter 12: Ransom]() Writing a PowerShell program that will randomly capitalize letters in a given piece of text for the nefarious purpose of creating a ransom note.
+* [Chapter 12: Ransom](https://github.com/dfinke/Tiny-PowerShell-Projects/tree/master/12_ransom) Writing a PowerShell program that will randomly capitalize letters in a given piece of text for the nefarious purpose of creating a ransom note.
 
-* [Chapter 13: Twelve Days of Christmas]() Writing a PowerShell program to create the verses for "The Twelve Days of Christmas" from a given day. Learning how to write a function and the test for it, then using the function in a list to generate the output.
+* [Chapter 13: Twelve Days of Christmas](https://github.com/dfinke/Tiny-PowerShell-Projects/tree/master/13_twelve_days) Writing a PowerShell program to create the verses for "The Twelve Days of Christmas" from a given day. Learning how to write a function and the test for it, then using the function in a list to generate the output.
 
-* [Chapter 14: The Rhymer]() Writing a PowerShell program that can split off any initial consonants from a word and append a list of prefixes to create new rhyming "words." Exploration of regular expressions to handle words with no initial consonants, with one or more leading consonants, and nothing but consonants.
+* [Chapter 14: The Rhymer](https://github.com/dfinke/Tiny-PowerShell-Projects/tree/master/14_rhymer) Writing a PowerShell program that can split off any initial consonants from a word and append a list of prefixes to create new rhyming "words." Exploration of regular expressions to handle words with no initial consonants, with one or more leading consonants, and nothing but consonants.
 
-* [Chapter 15: The Kentucky Friar]() In this chapter we delve further into regular expressions, first learning how to split a string using a regex so we can separate things that look like "words" from non-words like punctuation and whitespace. Then we try to identify the word "you" (case-insensitive) to turn into "y'all" and any 2-syllable words ending in "-ing" so we can replace the final "g" with an apostrophe so that "cooking" becomes "cookin'" but "swing" would remain "swing." We then apply this to an entire body of text to Kentucky fry the words with amusing results.
+* [Chapter 15: The Kentucky Friar](https://github.com/dfinke/Tiny-PowerShell-Projects/tree/master/15_kentucky_friar) In this chapter we delve further into regular expressions, first learning how to split a string using a regex so we can separate things that look like "words" from non-words like punctuation and whitespace. Then we try to identify the word "you" (case-insensitive) to turn into "y'all" and any 2-syllable words ending in "-ing" so we can replace the final "g" with an apostrophe so that "cooking" becomes "cookin'" but "swing" would remain "swing." We then apply this to an entire body of text to Kentucky fry the words with amusing results.
 
-* [Chapter 16: The Scrambler]() Writing a PowerShell program to find each "word" in a body of text and then scramble the letters such that the first and last letters remain in place, then reconstructing the text for output. Using regular expressions to split text, using `Sort-Object { Get-Random }`.
+* [Chapter 16: The Scrambler](https://github.com/dfinke/Tiny-PowerShell-Projects/tree/master/16_scrambler) Writing a PowerShell program to find each "word" in a body of text and then scramble the letters such that the first and last letters remain in place, then reconstructing the text for output. Using regular expressions to split text, using `Sort-Object { Get-Random }`.
 
 <!-- * [Chapter 17: Mad Libs]() Writing a PowerShell program to play the classic Mad Libs game. Reading an input file with placeholders for parts of speech like "adjective" or "noun." Getting the inputs to replace those from the user interactively via the "input()" function or taking them from the command-line arguments. Using regular expressions to find and replace the placeholders. Learning about greedy regex and how to make them not greedy. Using the `re.findall()` and `re.sub()` functions. Using `sys.exit()` to prematurely exit a program with an error message/value. -->
 
