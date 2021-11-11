@@ -47,9 +47,9 @@ You should run the test suite after every change to your program to ensure you a
 
 ## Chapters
 
-* [Chapter 1: How to write and test a PowerShell program](https://github.com/dfinke/Tiny-PowerShell-Projects/tree/master/01_hello) How to create a PowerShell program that prints a string and takes a parameter.
+* [[source code]](./01_hello/hello.ps1) [Chapter 1: How to write and test a PowerShell program](https://github.com/dfinke/Tiny-PowerShell-Projects/tree/master/01_hello) How to create a PowerShell program that prints a string and takes a parameter.
 
-* [Chapter 2: Crow's Nest](https://github.com/dfinke/Tiny-PowerShell-Projects/tree/master/02_crowsnest) How to write a PowerShell program that accepts a single, positional argument and creates a newly formatted output string.
+* [[source code]](./02_crowsnest/crowsnest.ps1) [Chapter 2: Crow's Nest](https://github.com/dfinke/Tiny-PowerShell-Projects/tree/master/02_crowsnest) How to write a PowerShell program that accepts a single, positional argument and creates a newly formatted output string.
 
 * [Chapter 3: Picnic](https://github.com/dfinke/Tiny-PowerShell-Projects/tree/master/03_picnic) Writing a PowerShell program that accepts multiple string arguments and formats the results depending on the number of items.
 
