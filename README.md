@@ -53,7 +53,7 @@ You should run the test suite after every change to your program to ensure you a
 
 * [Chapter 3: Picnic](https://github.com/dfinke/Tiny-PowerShell-Projects/tree/master/03_picnic) Writing a PowerShell program that accepts multiple string arguments and formats the results depending on the number of items. [[source code]](./03_picnic/picnic.ps1)
 
-* [Chapter 4: Jump The Five](https://github.com/dfinke/Tiny-PowerShell-Projects/tree/master/04_jump_the_five) Writing a PowerShell program to encode the numerals in a given text using an algorithm called "Jump The Five." Use of a dictionary as a lookup table, characters not in the dictionary remain unchanged. Introduction to encoding/decoding text, basic idea of encryption. [[source code]](./04_jump_the_five/04_jump_the_five.ps1) 
+* [Chapter 4: Jump The Five](https://github.com/dfinke/Tiny-PowerShell-Projects/tree/master/04_jump_the_five) Writing a PowerShell program to encode the numerals in a given text using an algorithm called "Jump The Five." Use of a dictionary as a lookup table, characters not in the dictionary remain unchanged. Introduction to encoding/decoding text, basic idea of encryption. [[source code]](./04_jump_the_five/jump.ps1) 
 
 * [Chapter 5: Howler](https://github.com/dfinke/Tiny-PowerShell-Projects/tree/master/05_howler) Writing a PowerShell program that can process input text either from the command line or from a file.The output prints either to STDOUT or to a file.  Learning about how to read/write the contents of a file. [[source code]](./05_howler/howler.ps1)
 
