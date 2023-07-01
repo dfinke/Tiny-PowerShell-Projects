@@ -1,7 +1,7 @@
 
 param (
-    [string]$name = "World"
+    [string]$namestring = "World"
 )
 
 
-return "Hello, $name!"
+return "Hello, $namestring!"
