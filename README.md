@@ -1,10 +1,13 @@
+<!-- 
 # Try It
 
-Try the puzzles online in a Jupyter Notebook. No installs needed.
+Try the puzzles online in a Jupyter Notebook. No installs needed. 
 
 Click here:
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dfinke/Tiny-PowerShell-Projects/master)
+
+-->
 
 # Tiny PowerShell Projects
 
