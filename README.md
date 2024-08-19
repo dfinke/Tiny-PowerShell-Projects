@@ -22,6 +22,12 @@ One of the many cool aspects of this not only the approach to learning `PowerShe
 
 Either way, it's the same puzzles implemented in both languages, and you can use the tests provided, to do Test Driven Development and prove these and your solutions work, as you make changes.
 
+## The Video
+Scripting Success A Deep Dive into Tiny PowerShell Projects.
+
+<a href="https://youtu.be/BVDBRty5mCU"><img src="https://img.youtube.com/vi/BVDBRty5mCU/0.jpg" width="450">
+
+
 ## The approach
 
 There is a directory for each chapter of the book.
