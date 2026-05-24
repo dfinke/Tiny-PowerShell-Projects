@@ -22,6 +22,10 @@ One of the many cool aspects of this not only the approach to learning `PowerShe
 
 Either way, it's the same puzzles implemented in both languages, and you can use the tests provided, to do Test Driven Development and prove these and your solutions work, as you make changes.
 
+## AI Skills
+
+Want reusable AI skill prompts derived from this repo? See [AI_SKILLS.md](./AI_SKILLS.md).
+
 ## The Video
 Scripting Success A Deep Dive into Tiny PowerShell Projects.
 
