@@ -9,7 +9,7 @@
 | Author the same AI skill across multiple harness layouts | Open issues `#12`, `#14`, `#16`, `#18`; related open PRs `#13`, `#15`, `#17`, `#19`; active `copilot/*ai-skills*` branches | Repeated in recent repo activity / High | Script | Manual copy/edit across `.github/.agents/.claude` is repetitive and error-prone |
 | Add release/changelog automation | No release workflow, tags pipeline, or changelog process found in this branch | Low evidence / Low | Skip | Needs stronger maintainer signal before introducing publishing automation |
 
-## Created high-confidence missing item
+## Created high-confidence missing items
 
 ### `New-AISkillScaffold.ps1` (script)
 
@@ -30,3 +30,14 @@ pwsh -NoProfile -File ./New-AISkillScaffold.ps1 \
 ```
 
 Use `-Force` to overwrite existing scaffolded files.
+
+### Repository-derived skill set
+
+- `tiny-ps-chapter-test-loop`
+  - Packages the repeated chapter-first, repo-second validation workflow documented in `README.md` and implemented by `AllTest.ps1` plus `RunAllTests.ps1`.
+- `tiny-ps-deterministic-random`
+  - Encodes the repeated seeded-random pattern used in chapters such as `09_abuse`, `10_telephone`, `12_ransom`, `16_scrambler`, `19_wod`, and `20_password`.
+- `tiny-ps-regex-text-transform`
+  - Captures the repeated regex-first text transformation approach used in `08_apples_and_bananas`, `15_kentucky_friar`, `16_scrambler`, and `17_mad_libs`.
+- `tiny-ps-input-normalization`
+  - Packages the recurring "literal text or file path" input handling found in chapters such as `05_howler`, `10_telephone`, `12_ransom`, and `15_kentucky_friar`.
