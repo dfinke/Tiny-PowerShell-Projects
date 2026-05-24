@@ -1,12 +1,11 @@
-# AI Skills from Tiny PowerShell Projects
+---
+name: tiny-powershell-projects
+description: Reusable PowerShell development skills derived from Tiny PowerShell Projects chapters, including CLI parsing, file IO, regex transforms, deterministic randomness, and Pester-driven TDD.
+---
 
-These reusable skills are derived from the chapter projects in this repository and are available in harness-ready formats:
+# Tiny PowerShell Projects Skill Pack
 
-- VS Code Copilot skill: `.github/skills/tiny-powershell-projects/SKILL.md`
-- Codex skill: `.agents/skills/tiny-powershell-projects/SKILL.md`
-- Claude Code command: `.claude/commands/tiny-powershell-projects.md`
-
-The shared source-of-truth content is in `.github/skills/tiny-powershell-projects/SKILL.md`.
+Use this skill when building or refactoring PowerShell scripts in this repository style.
 
 ## 1) Build robust PowerShell CLI parameters
 - **Use when:** creating command-line tools with optional/required inputs.
@@ -68,12 +67,9 @@ The shared source-of-truth content is in `.github/skills/tiny-powershell-project
 - **Source chapters:** all chapters with `AllTest.ps1`
 - **Skill instructions:** keep `solution*.ps1` variants, copy target file in `AllTest.ps1`, and verify each variant against the same test contract.
 
----
-
-## Prompt snippets you can give an AI
-
-1. **“Create a PowerShell CLI script with validated `param(...)` arguments, friendly usage text, and Pester tests for valid/invalid inputs.”**
-2. **“Write a deterministic random text generator in PowerShell that accepts `-Seed` and has tests asserting exact output.”**
-3. **“Implement a regex-based word transformer that preserves punctuation/whitespace and includes edge-case tests.”**
-4. **“Build a `wc`-style script that supports stdin and multiple files, with aligned summary output and totals.”**
-5. **“Refactor this script into small pure functions and wire it through `AllTest.ps1` so multiple `solution*.ps1` variants can be tested.”**
+## Prompt snippets
+1. **Create a PowerShell CLI script with validated `param(...)` arguments, friendly usage text, and Pester tests for valid/invalid inputs.**
+2. **Write a deterministic random text generator in PowerShell that accepts `-Seed` and has tests asserting exact output.**
+3. **Implement a regex-based word transformer that preserves punctuation/whitespace and includes edge-case tests.**
+4. **Build a `wc`-style script that supports stdin and multiple files, with aligned summary output and totals.**
+5. **Refactor this script into small pure functions and wire it through `AllTest.ps1` so multiple `solution*.ps1` variants can be tested.**

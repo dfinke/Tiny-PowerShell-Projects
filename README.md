@@ -24,7 +24,12 @@ Either way, it's the same puzzles implemented in both languages, and you can use
 
 ## AI Skills
 
-Want reusable AI skill prompts derived from this repo? See [AI_SKILLS.md](./AI_SKILLS.md).
+Want reusable AI skills derived from this repo?
+
+- Overview: [AI_SKILLS.md](./AI_SKILLS.md)
+- VS Code Copilot: [`.github/skills/tiny-powershell-projects/SKILL.md`](./.github/skills/tiny-powershell-projects/SKILL.md)
+- Codex: [`.agents/skills/tiny-powershell-projects/SKILL.md`](./.agents/skills/tiny-powershell-projects/SKILL.md)
+- Claude Code: [`.claude/commands/tiny-powershell-projects.md`](./.claude/commands/tiny-powershell-projects.md)
 
 ## The Video
 Scripting Success A Deep Dive into Tiny PowerShell Projects.
